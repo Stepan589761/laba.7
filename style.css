@@ -1,0 +1,310 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.search img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.header-text{
+    cursor: pointer;
+}
+
+.header-text span img{
+    width: 10px;
+    height: 10px;
+}
+.search{
+    margin-left: 150px;
+}
+
+.header-text span{
+    font-size: 15px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.button-header{
+    border: solid;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center; /* Горизонтальное выравнивание */
+    align-items: center;
+    border-radius: 5px; 
+    border-width: 2px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.talk-to-sales{
+    border-color: purple;
+    margin-left: 30px;
+    transition: border-width 0.2s ease;
+}
+
+.talk-to-sales:hover{
+    border-width: 3px;
+}
+
+.talk-to-sales span{
+    margin-bottom: 5px;
+    color: purple;
+}
+
+.get-started{
+    background-color: rgb(99, 7, 99);
+    border-color: rgb(99, 7, 99);
+    transition: ease 0.3s;
+}
+
+.get-started:hover{
+    background-color: rgb(78, 7, 78);
+    border-color: rgb(78, 7, 78);
+}
+
+.get-started span{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.some-words .get-started{
+    margin-top: -32px;
+}
+
+.buttons-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.title{
+    text-align: center;
+}
+
+.title h1{
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title h1 span{
+    color: rgb(169, 9, 169);
+}
+
+.title{
+    height: 120px;
+}
+
+.some-words .get-started{
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+    height: 50px;
+}
+
+.other-text{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.other-text span{
+    font-size: 20px;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.images{
+    display: flex;
+    align-items: center;  
+    justify-content: space-between; /* Равные отступы между изображениями */
+    width: 57%;
+}
+
+.video-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.big-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.big-text h1{
+    font-size: 50px;
+    width: 1072px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.part-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.part-row span{
+    margin-left: 10px;
+}
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    
+    .header-text span {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .buttons-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-header {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .some-words .get-started {
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .title h1 {
+        font-size: 40px;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images img {
+        max-width: 80px;
+        margin-bottom: 10px;
+    }
+
+    .video-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .video-container video {
+        width: 100%;
+        height: auto;
+    }
+
+    .big-text h1 {
+        font-size: 30px;
+        width: 90%;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .part-row {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .part-row span {
+        font-size: 14px;
+    }
+}
+
+/* Для планшетов (ширина экрана от 601px до 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .header {
+        padding: 20px;
+    }
+
+    .header-text span {
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    .buttons-header {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .button-header {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .some-words .get-started {
+        width: 150px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .title h1 {
+        font-size: 50px;
+    }
+
+    .images img {
+        max-width: 100px;
+    }
+
+    .big-text h1 {
+        font-size: 40px;
+    }
+
+    .row {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .part-row span {
+        font-size: 16px;
+    }
+}
+/* Оптимизация кнопок на мобильных устройствах */
+@media (max-width: 600px) {
+    .button-header {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .get-started {
+        font-size: 14px;
+    }
+}
+
+/* Увеличение шрифтов для планшетов */
+@media (min-width: 601px) and (max-width: 900px) {
+    .button-header {
+        font-size: 18px;
+    }
+
+    .get-started {
+        font-size: 16px;
+    }
+}
